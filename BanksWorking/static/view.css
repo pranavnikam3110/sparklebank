@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+body{
+    /* background-color: aqua; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* overflow: hidden; */
+
+    
+}
+
+table,th,td{
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    padding: 16px;
+    margin: auto;
+    color: #fff;
+}
+
+body,h1{
+    text-align: center;
+}
+
+body,h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+
+}

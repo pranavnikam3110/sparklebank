@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'view.css' %}">
+    <link rel="icon" type="image/jpg"  href="{% static 'bg.jpg' %}">
+    <title>view</title>
+</head>
+
+<body>
+    <h1>Our Customers</h1>
+    <div class="table">
+
+        {%if vc%}
+        <table>
+
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Amount</th>
+            </tr>
+
+            {%for s in vc %}
+            <tr>
+                <td>{{s.user_id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.email}}</td>
+                <td>{{s.amount}}</td>
+            </tr>
+            {% endfor %}
+
+            {% endif %}
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'history.css' %}">
+    <link rel="icon" type="image/jpg"  href="{% static 'bg.jpg' %}">
+    <title>Transction History</title>
+</head>
+<body>
+    <h1>Transction History</h1>
+
+    <div class="container mt-5">
+        {%if tc%}
+    
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Sender</th>
+                    <th scope="col">Recviver</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for t in tc %}
+                <tr>
+                    <td>{{t.sname}}</td>
+                    <td>{{t.rname}}</td>
+                    <td>{{t.money}}</td>
+                    <td>{{t.tdate}}</td>
+                </tr>
+                {% endfor %}
+    
+            </tbody>
+            {% endif %}
+        </table>
+    </div>
+</body>
+</html>

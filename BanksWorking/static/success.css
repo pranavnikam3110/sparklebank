@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+body{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+
+}
+.success,h1,img{
+    padding: 20px;
+    text-align: center; 
+    color: rgb(45, 240, 45);
+    font-size: 42px;
+    font-family: 'Jost', sans-serif;
+
+}

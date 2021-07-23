@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)),url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+}
+
+table,th,td{
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    padding: 20px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+}
+
+table,th{
+    font-size: 25px;
+}
